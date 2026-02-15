@@ -143,22 +143,3 @@ This project aligns with:
   
 - SDG 11 – Sustainable Cities and Communities (Enabling autonomous urban mobility).
   
----
-
-##  Installation & Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/Yazhini-G/AI-Enabled-Intelligent-Network-Slicing-for-6G
-
-# Navigate to project directory
-cd AI-Enabled-Intelligent-Network-Slicing-for-6G
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Install essential tools
-pip install streamlit pandas numpy plotly
-
-# Run the application (Visual Studio Terminal)
-streamlit run main.py
