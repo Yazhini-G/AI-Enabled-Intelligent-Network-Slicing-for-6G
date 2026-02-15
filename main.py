@@ -1,4 +1,3 @@
-```
 
 import streamlit as st
 import pandas as pd
@@ -125,4 +124,3 @@ if st.sidebar.button("🚀 Execute AI Orchestration"):
 else:
     st.info("👈 Select services and network load in the sidebar, then click 'Execute AI Orchestration' to start the Digital Twin simulation.")
 
-```
