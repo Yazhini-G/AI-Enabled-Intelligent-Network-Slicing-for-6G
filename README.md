@@ -58,8 +58,32 @@ Legacy 5G network slicing faces significant challenges in the 6G era:
 
 4. Execution Layer: Deploys resources as Hardware-Locked or Software-Defined slices.
 
+---
+## How the System Works
+
+1. The project operates as a closed-loop automation system where the Digital Twin and AI Orchestrator work in tandem to manage network resources.
+
+2. Request Ingestion: When a user selects services (e.g., Remote Surgery and 8K Video) in the Network Control Center, the system identifies the specific 6G service class (mURLLC, eMBB, or umMTC) for each.
+
+3. Digital Twin Synchronization: The Digital Twin Engine instantly creates a virtual model of the network based on the current "Simulated Congestion" level. It calculates the projected latency and reliability for both services.
+
+4. AI Orchestration & Slice Selection:
+
+      - The AI evaluates the service requirements against the Digital Twin's  predictions.
+
+      - Mission-Critical tasks are assigned to Slice 1 (Hardware-Locked) to ensure zero interference from other traffic.
+
+      - High-Bandwidth tasks are assigned to Slice 2 (Software-Defined) to maximize throughput.
+
+5. Orthogonal Slicing Execution: If two services must share a slice, the AI applies Orthogonal Slicing. It injects high-priority packet headers into the primary service stream, allowing it to clear the network queue 0.2 ms faster than the secondary service.
+
+6. XAI Transparency: The XAI Module simultaneously generates a report and a bar chart showing the Global Decision Weights. This explains why the AI prioritized certain features (like Latency or Reliability) for the selected configuration.
+
+7. Real-Time Benchmarking: The results are plotted on the dashboard, comparing the stable, predictive latency of the 6G AI-Native system against the erratic, high-jitter performance of Legacy 5G.
+
 
 ---
+
 ## Hardware Requirements
 - The 6G orchestrator is designed to run in a simulated environment that mirrors high-performance edge computing architectures.
 
