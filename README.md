@@ -157,5 +157,8 @@ cd AI-Enabled-Intelligent-Network-Slicing-for-6G
 # Install dependencies
 pip install -r requirements.txt
 
+# Install essential tools
+pip install streamlit pandas numpy plotly
+
 # Run the application (Visual Studio Terminal)
-streamlit run app.py
+streamlit run main.py
